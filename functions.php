@@ -7,6 +7,4 @@ function dd($value) {
     die();
 }
 
-
-
 ?>

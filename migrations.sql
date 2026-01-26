@@ -8,11 +8,24 @@ content VARCHAR(5200)
 
 );
 
+CREATE TABLE if NOT EXISTS categories (
+
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+category_name VARCHAR(25)
+
+);
+
 INSERT INTO posts (content)
 VALUES 
 
 ("Gūltā bija tīri forši, kas gan var būt labāks par atpūtu."),
-("Mājai jumts ir gandrīz noārdīts, iekšējās sienas arī jau noardītas, daudz jau vairs neatliek."),
+("Mājai jumts ir noārdīts, iekšējās sienas arī jau noardītas, daudz jau vairs neatliek."),
 ("Grupas Pērkons koncerts bija super, tikai nosala kājas, tapēc ilgi tur nepalikām.");
 
-SELECT * FROM posts;
+INSERT INTO categories (category_name)
+VALUES 
+
+("Svētki"),
+("Mūzika"),
+("Sports");
+
