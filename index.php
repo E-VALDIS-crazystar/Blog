@@ -17,21 +17,6 @@ if(isset($_GET["search_query"]) && trim($_GET["search_query"]) != "") {
 
 $posts = $db->query($sql_query, $params)->fetchAll(PDO::FETCH_ASSOC);
 
-echo "<h1 style='color: red;'>Emuārs jeb blogs</h1>";
-echo "<a href='categories.php' style='color: black; text-decoration: none; padding: 10px; font-size: 24px;'>Kategorijas</a>";
-
-echo "<form>";
-    echo "<input name='search_query' placeholder='Meklēt...' style='width: 250px; border: 2px solid black; border-radius: 5px; padding: 10px; margin: 15px;' />";
-    echo "<button style='padding: 10px; border-radius: 5px; border: 2px solid black; cursor: pointer; color: white; background-color: #007bff;'>Meklēt</button>";
-echo "</form>";
-
-echo "<ul>";
-    foreach($posts as $post) {
-        echo "<li>" . $post["content"] . "</li>";
-    }
-echo "</ul>";
-
-echo "<img src='house.jpg' style='width: 300px; height: 300px;' />";
-
+require "./views/index.view.php";
 
 ?>
