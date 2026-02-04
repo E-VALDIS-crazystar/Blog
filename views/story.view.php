@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="lv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>EVIS Emuāri</title>
-</head>
-<body>
-  
+<?php require "components/layout.php";?>
+
+<?= $header ?>
+
     <header>
-        <h1>Stāsts</h1>
+        <h1>Par mums</h1>
 
         <div class="nav">
-            <a href='./index.php'>Sākums</a>
-            <a href='./categories.php'>Kategorijas</a>
+            <?php require "components/navbar.php"; ?>
         </div>
     </header>
 
@@ -23,3 +16,5 @@
         <p><?php $title ?> ir blogošanas platforma, kas pilnībā mainījusi veidu, kā mēs blogojam un patērējam saturu. <?php $title ?> ne tikai izceļas ar vizuāli pievilcīgu, modernu un lietotājam draudzīgu interfeisu, bet piedāvā arī inovatīvas funkcijas, kas pārspēj esošo konkurenci. <?php $title ?> ir vairāk nekā tikai blogošanas platforma - tā ir pilnīga kopiena.</p>
         <p>Pateicoties programmētāju talantam un neatlaidībai,<?php $title ?> ļoti īsā laikā kļuvusi par Latvijā vadošo blogošanas platformu. Lietotāju skaits strauji pieaug, jo cilvēki no visas Latvijas novērtē iespējas, ko piedāvā <?php $title ?>, un platformas radīto ciešo saikni starp rakstniekiem un lasītājiem.</p>
     </div>
+
+<?= $footer ?>

@@ -1,4 +1,5 @@
 <?php
+$pageTitle = "EVIS Emuāri - ieraksti";
 
 require_once "functions.php";
 require_once "Database.php";

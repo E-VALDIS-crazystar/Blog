@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="lv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>EVIS Emuāri</title>
-</head>
-<body>
+<?php require "components/layout.php"; ?>
   
+<?= $header ?>
+
     <header>
         <h1>EMUĀRS / BLOGS</h1>
 
         <div class="nav">
-            <a href='./categories.php'>Kategorijas</a>
-            <a href='./story.php'>Stāsts</a>
+            <?php require "components/navbar.php"; ?>
         </div>
     </header>
     
@@ -39,5 +32,4 @@
 
     <img src='house.jpg'/>
 
-</body>
-</html>
+<?= $footer ?>
