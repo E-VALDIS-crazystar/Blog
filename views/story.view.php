@@ -1,6 +1,4 @@
-<?php require "components/layout.php";?>
-
-<?= $header ?>
+<?php require "components/header.php"; ?>
 
     <header>
         <h1>Par mums</h1>
@@ -17,4 +15,4 @@
         <p>Pateicoties programmētāju talantam un neatlaidībai,<?php $title ?> ļoti īsā laikā kļuvusi par Latvijā vadošo blogošanas platformu. Lietotāju skaits strauji pieaug, jo cilvēki no visas Latvijas novērtē iespējas, ko piedāvā <?php $title ?>, un platformas radīto ciešo saikni starp rakstniekiem un lasītājiem.</p>
     </div>
 
-<?= $footer ?>
+<?php require "components/footer.php"; ?>

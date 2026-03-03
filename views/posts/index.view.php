@@ -1,12 +1,10 @@
-<?php require "components/layout.php"; ?>
-  
-<?= $header ?>
+<?php require "views/components/header.php"; ?>
 
     <header>
         <h1>EMUĀRS / BLOGS</h1>
 
         <div class="nav">
-            <?php require "components/navbar.php"; ?>
+            <?php require "views/components/navbar.php"; ?>
         </div>
     </header>
     
@@ -23,13 +21,13 @@
         <?php } else { ?>
             <ul>
                 <?php foreach($posts as $post) { ?>
-                <li> <?= $post["content"] ?> </li>
+                <li><a href="show?id=<?= $post["id"]?>"> <?= htmlspecialchars($post["content"]) ?> </li>
                 <?php } ?>
             </ul>
         <?php } ?>
     </div>
 
 
-    <img src='house.jpg'/>
+    <img src='img/house.jpg'/>
 
-<?= $footer ?>
+<?php require "views/components/footer.php"; ?>

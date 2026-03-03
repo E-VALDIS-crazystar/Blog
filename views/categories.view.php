@@ -1,6 +1,4 @@
-<?php require "components/layout.php"; ?>
-
-<?= $header ?>
+<?php require "components/header.php"; ?>
   
     <header>
         <h1>Kategorijas</h1>
@@ -29,4 +27,4 @@
         <?php } ?>
     </div>
 
-<?= $footer ?>
+<?php require "components/footer.php"; ?>
