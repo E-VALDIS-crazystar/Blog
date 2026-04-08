@@ -21,7 +21,7 @@
         <?php } else { ?>
             <ul>
                 <?php foreach($posts as $post) { ?>
-                <li><a href="show?id=<?= $post["id"]?>"> <?= htmlspecialchars($post["content"]) ?> </li>
+                <li><a href="show-post?id=<?= $post["id"]?>"> <?= htmlspecialchars($post["content"]) ?> </li>
                 <?php } ?>
             </ul>
         <?php } ?>

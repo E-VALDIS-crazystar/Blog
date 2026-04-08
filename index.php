@@ -5,7 +5,4 @@ $config = require "config.php";
 
 $db = new Database($config["database"]);
 require_once "router.php";
-
-
-
 ?>

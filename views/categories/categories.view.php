@@ -1,10 +1,10 @@
-<?php require "components/header.php"; ?>
+<?php require "views/components/header.php"; ?>
   
     <header>
         <h1>Kategorijas</h1>
 
         <div class="nav">
-            <?php require "components/navbar.php"; ?>
+            <?php require "views/components/navbar.php"; ?>
         </div>
     </header>
     
@@ -17,14 +17,14 @@
     
     <div class="categories">
         <?php if (count($categories) == 0) { ?>
-            <p>❌❌❌ Nav atrasts neviens ieraksts! ❌❌❌ 🐣 Ievadi citu vārdu vai frāzi. 🐣</p>
+            <p>❌❌❌ Nav atrasta neviena kategorija! ❌❌❌ 🐣 Ievadi citu. 🐣</p>
         <?php } else { ?>
             <ul>
                 <?php foreach($categories as $category) { ?>
-                <li> <?= $category["category_name"] ?> </li>
+                <li><a href="show-category?id=<?= $category["id"]?>"> <?= htmlspecialchars($category["category_name"]) ?> </a></li>
                 <?php } ?>
             </ul>
         <?php } ?>
     </div>
 
-<?php require "components/footer.php"; ?>
+<?php require "views/components/footer.php"; ?>

@@ -172,6 +172,7 @@ img{
     margin: 15px;
     padding: 15px;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 .categories p{
@@ -184,6 +185,12 @@ img{
     padding: 15px;
     border-radius: 10px;
 
+}
+
+.categories a{
+
+    color: black;
+    text-decoration: none;
 }
 
 .story h1{
@@ -259,6 +266,7 @@ img{
     border-radius: 5px;
     border: 2px solid black;
     resize: none;
+    outline: none;
 }
 
 .create-post form button{
@@ -270,6 +278,35 @@ img{
     color: white;
     background-color: #C3110C;
 }
+
+.create-post select{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid black;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px;
+  background-color: #C3110C;
+  outline: none;
+}
+
+select:hover,
+select:focus {
+  background: #740A03;
+}
+
+option {
+
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    outline: none;
+}
+
 
 .create-post p{
 
@@ -325,3 +362,263 @@ img{
     font-size: 32px;
     font-family: serif;
 }
+
+.comment {
+
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: white;
+    background-color: #C3110C;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: serif;
+}
+
+.back {
+
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: white;
+    background-color: #C3110C;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: serif;
+}
+
+.create-comment{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.create-comment h2{
+
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+}
+
+.create-comment form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.create-comment form textarea{
+
+    width: 250px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    resize: none;
+    outline: none;
+}
+
+.create-comment form input{
+
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    outline: none;
+}
+
+.create-comment form button{
+
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: white;
+    background-color: #C3110C;
+}
+
+.comments-view{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.comments-view h2{
+
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+}
+
+.comments-view p{
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: #982598;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.comments-view ul{
+
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.comments-view li{
+
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.comment-author{
+
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.comment-text{
+
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.comment-date{
+
+    margin-top: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.com-changes{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px;
+    gap: 5px;
+}
+
+.com-changes a{
+
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: white;
+    background-color: #982598;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: serif;
+}
+
+.com-changes button {
+
+    display: flex;
+    width: 100px;
+    height: 31px;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: white;
+    background-color: #982598;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: serif; 
+}
+
+.edit-comment{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.edit-comment h2{
+
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+}
+
+.edit-comment form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-comment form textarea{
+
+    width: 250px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    resize: none;
+    outline: none;
+}
+
+.edit-comment form button{
+
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    color: white;
+    background-color: #C3110C;
+}
+
+.edit-comment form input{
+
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    outline: none;
+}
+
